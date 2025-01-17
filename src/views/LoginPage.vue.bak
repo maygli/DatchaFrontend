@@ -1,0 +1,97 @@
+<template>
+  <v-container fluid>
+    <v-card class="mx-auto" elevation="16" max-width="380">
+      <v-toolbar color="primary">
+        <v-toolbar-title>{{ t("authentification.signin") }}</v-toolbar-title>
+      </v-toolbar>
+      <v-form v-model="form" @submit.prevent="onSubmit" class="mx-auto px-6 py-8">
+        <v-text-field v-model="email" :readonly="loading" :rules="[required]" class="mb-2"
+          :label="t('login_page.email_or_login')" clearable prepend-inner-icon="mdi-account"
+          :placeholder="t('login_page.enter_login_or_email')"></v-text-field>
+
+        <v-text-field v-model="password" :readonly="loading" :rules="[required]" :label="t('authentification.passowrd')"
+          :placeholder="t('authentification.enter_password')" clearable prepend-inner-icon="mdi-lock"
+          :append-inner-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'" @click:append-inner="show1 = !show1"
+          :type="show1 ? 'text' : 'password'"></v-text-field>
+
+        <div class="text-grey-8 text-left"><router-link to="reset_password_page"><a href="reset_password_page">{{
+          t("login_page.fogot_password") }}</a></router-link>
+        </div>
+        <br>
+        <v-btn :loading="loading" color="primary" size="large" type="submit" variant="elevated" block>
+          {{ t("authentification.signin") }}
+        </v-btn>
+        <v-alert closable :close-text="t('allert.close')" color="error" v-model="alert">{{
+          t("alert.invalid_login_password") }}</v-alert>
+        <div class="text-grey-8 py-4">{{ t("login_page.dont_have_account") }}<router-link to="register_page"><a
+              href="#register_page">{{ t("authentification.register") }}</a></router-link>
+        </div>
+      </v-form>
+    </v-card>
+  </v-container>
+</template>
+
+<script setup>
+/*eslint-disable*/
+import axios from 'axios'
+import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/authstore.js'
+
+const router = useRouter()
+const authStore = useAuthStore()
+
+const { t } = useI18n({ scope: 'global', })
+
+const form = ref(false)
+const email = ref(null)
+const password = ref(null)
+const loading = ref(false)
+const show1 = ref(false)
+const alert = ref(false)
+
+function onSubmit() {
+  if (!form.value) return
+
+  loading.value = true
+  alert.value = false
+  let data = { username: email.value, password: password.value }
+  axios.put('/login', data)
+    .then(function (response) {
+      loading.value = false;
+      alert.value = false;
+      console.log(response);
+      let status = undefined
+      if (response && response.data) {
+        status = response.data.auth_status
+      }
+      authStore.setAuthStatus(status)
+      if (response.headers.authorization) {
+        console.log("Set local storage")
+        localStorage.setItem("refresh", response.headers.authorization)
+      }
+      router.push("/projects_page")
+    })
+    .catch(function (error) {
+      loading.value = false;
+      alert.value = true;
+      setTimeout(() => {
+        console.log("Timeout called")
+        if (alert.value) {
+          loading.value = false,
+            alert.value = false
+        }
+      }, 2000)
+    });
+
+}
+
+function required(v) {
+  return !!v || t("validation.required")
+}
+
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped></style>

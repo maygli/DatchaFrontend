@@ -1,0 +1,130 @@
+{
+  "language": {
+    "name": "Русский"
+  },
+  "app": {
+    "title": "CrazyDatcha"
+  },
+  "alert": {
+    "close": "Закрыть",
+    "invalid_login_password": "Неверное имя пользователя или пароль"
+  },
+  "authentification": {
+    "enter_password": "Введите пароль",
+    "passowrd": "Пароль",
+    "register": "Зарегистрироваться",
+    "signin": "Войти"
+  },
+  "login_page": {
+    "dont_have_account": "Нет учетной записи ? ",
+    "email_or_login": "Имя или электронная почта",
+    "enter_login_or_email": "Введите имя или почту",
+    "fogot_password": "Забыли пароль"
+  },
+  "success_third_party_login": {
+    "title": "Вы успешно вошли на сервер Crazy Datcha. Сейчас загрузиться основная страница."
+  },
+  "register_page": {
+    "already_have_account": "Уже есть аккаунт ? ",
+    "email": "Электронная почта",
+    "enter_email": "Введите почту",
+    "enter_login": "Введите имя",
+    "name": "Имя",
+    "repeat_password": "Повторите пароль"
+  },
+  "project_card": {
+    "enter": "Открыть проект",
+    "edit": "Редактировать параметры проекта",
+    "remove": "Удалить проект"
+  },
+  "app_bar": {
+    "switch_theme": "Переключить тему"
+  },
+  "projects_view": {
+    "add_project": "Добавить проект"
+  },
+  "new_project": {
+    "title": "Добавить новый проект",
+    "project_name": "Имя проекта",
+    "enter_project_name": "Введите имя проекта",
+    "select_project_image": "Выберите картинку для проекта"
+  },
+  "new_password": {
+    "title": "Сменить пароль"
+  },
+  "dialog": {
+    "ok": "Ок",
+    "cancel": "Отмена"
+  },
+  "projects_toolbar": {
+    "account_tooltip": "Пользователь",
+    "profile": "Профиль",
+    "logout": "Выйти"
+  },
+  "confirm_email": {
+    "title": "Пожалуйста подтвердите Ваш адрес электронной почты",
+    "message1": "Вам было послано письмо для подтверждения адреса элетронной почты.",
+    "message2": "Пожалуйста откройте его и нажмите кнопку 'Подтвердить'.",
+    "message3": "Если письма нет, посмотрите в папке 'Spam'.",
+    "logout": "Выйти из аккаунта"
+  },
+  "reset_password": {
+    "title": "Сбросить пароль",
+    "email": "Электронная почта",
+    "enter_email": "Введите почту",
+    "send": "Отправить письмо",
+    "will_send": "Письмо для сброса пароля будет отправлено на указанную почту",
+    "has_send": "Письмо для сброса пароля отправлено на указанную почту",
+    "resend": "Повторно письмо можно послать через",
+    "remembered": "Я вспомнил пароль!"
+  },
+  "timer_widget": {
+    "secs": "сек"
+  },
+  "splash": {
+    "loading": "Загрузка"
+  },
+  "general_settings": {
+    "name": "Имя",
+    "enter_name": "Введите имя",
+    "select_image": "Выберете картинку"
+  },
+  "edit_project_properties": {
+    "title": "Свойства проекта"
+  },
+  "edit_profile_properties": {
+    "title": "Свойства аккаунта",
+    "enter_account_name": "Введите имя",
+    "account_name": "Имя пользователя",
+    "select_user_image": "Выберете аватар"
+  },
+  "validation": {
+    "required": "Заполните поле",
+    "passdontmatch": "Не совпадает с паролем",
+    "user_name_len": "Слишком короткое имя пользователя",
+    "pwd_len": "Слишком короткий пароль",
+    "invalid_user_name": "Имя пользователя должно начинаться с английской буквы и содержать английские буквы, цифры и подчеркивания",
+    "project_name_len": "Слишком короткое название проекта",
+    "invalid_email": "Введите пожалуйста валидный адрес",
+    "name_len": "Слишком короткое имя"
+  },
+  "server": {
+    "errors": {
+      "internal": "Ошибка сервера",
+      "user_name_empty": "Ведите имя пользователя",
+      "user_name_too_short": "Слишком короткое имя пользователя",
+      "password_too_short": "Слишком короткий пароль",
+      "email_invalid": "Невалидный e-mail адрес",
+      "duplicate_user_name": "Пользователь с таким именем уже существует. Выберете другое имя",
+      "duplicate_email": "Пользователь с таким e-mail уже зарегестрирован. Выберете другой e-mail",
+      "authorisation_required": "У вас нет прав для выполнения этой операции",
+      "project_name_too_short": "Слишком короткое имя проекта",
+      "bad_request": "Ошибка сервера"
+    }
+  },
+  "unit": {
+    "C": "&deg;C",
+    "kPa": "кПа",
+    "%": "%"
+  }
+}

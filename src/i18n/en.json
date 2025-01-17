@@ -1,0 +1,130 @@
+{
+  "language": {
+    "name": "English"
+  },
+  "app": {
+    "title": "CrazyDatcha"
+  },
+  "alert": {
+    "close": "Close",
+    "invalid_login_password": "Invalid user name or password"
+  },
+  "authentification": {
+    "enter_password": "Enter password",
+    "passowrd": "Password",
+    "register": "Register",
+    "signin": "Sign in "
+  },
+  "login_page": {
+    "dont_have_account": "Don't have an account yet ? ",
+    "email_or_login": "Email or login",
+    "enter_login_or_email": "Enter login or email",
+    "fogot_password": "Forgot password"
+  },
+  "register_page": {
+    "already_have_account": "Already have account ?  ",
+    "email": "Email",
+    "enter_email": "Enter email",
+    "enter_login": "Enter user name",
+    "name": "Name",
+    "repeat_password": "Repeat password"
+  },
+  "project_card": {
+    "enter": "Enter project",
+    "edit": "Edit project configuration",
+    "remove": "Remove project"
+  },
+  "app_bar": {
+    "switch_theme": "Switch theme"
+  },
+  "projects_view": {
+    "add_project": "Add project"
+  },
+  "new_project": {
+    "title": "Add new project",
+    "project_name": "Project name",
+    "enter_project_name": "Enter project name",
+    "select_project_image": "Select project image"
+  },
+  "projects_toolbar": {
+    "account_tooltip": "Account",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "confirm_email": {
+    "title": "Please confirm you email",
+    "message1": "A confirmation email has been sent to your email address.",
+    "message2": "Please open the email and click 'Confirm' button.",
+    "message3": "If you don't have email in you 'Inbox' folder please check 'Spam' folder.",
+    "logout": "Logout"
+  },
+  "reset_password": {
+    "title": "Reset password",
+    "email": "Email",
+    "enter_email": "Enter email",
+    "send": "Send email",
+    "will_send": "Reset password email will be sent to email you provided",
+    "has_send": "Reset password email has beeen sent to email you provided",
+    "resend": "You can resend email in",
+    "remembered": "I remembered password!"
+  },
+  "timer_widget": {
+    "secs": "secs"
+  },
+  "dialog": {
+    "ok": "ok",
+    "cancel": "cancel"
+  },
+  "new_password": {
+    "title": "Change password"
+  },
+  "splash": {
+    "loading": "Loading"
+  },
+  "success_third_party_login": {
+    "title": "You successfully login to Crazy Datcha. Please wait to redirect."
+  },
+  "general_settings": {
+    "name": "Name",
+    "enter_name": "Enter name",
+    "select_image": "Select image"
+  },
+  "edit_project_properties": {
+    "title": "Project properties"
+  },
+  "edit_profile_properties": {
+    "title": "Account properties",
+    "enter_account_name": "Enter user name",
+    "account_name": "User name",
+    "select_user_image": "Select avatar"
+  },
+  "validation": {
+    "required": "Field is required",
+    "passdontmatch": "Password don't match",
+    "user_name_len": "User name is too short",
+    "pwd_len": "Password is too short",
+    "invalid_user_name": "User name should start with letter and contains letters,digits and underscores",
+    "project_name_len": "Project name is too short",
+    "invalid_email": "Please enter valid email address",
+    "name_len": "Name is too short"
+  },
+  "server": {
+    "errors": {
+      "internal": "Server error",
+      "user_name_empty": "User name shouldn't empty",
+      "user_name_too_short": "User name is too short",
+      "password_too_short": "Password is too short",
+      "email_invalid": "Invalid email address",
+      "duplicate_user_name": "User with same name already exists. Please select another name",
+      "duplicate_email": "User with same email already exists. Please select another email",
+      "authorisation_required": "You don't have permission to this operation",
+      "project_name_too_short": "Project name is too short",
+      "bad_request": "Server error"
+    }
+  },
+  "unit": {
+    "C": "&deg;C",
+    "kPa": "kPa",
+    "%": "%"
+  }
+}
